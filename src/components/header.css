@@ -72,8 +72,4 @@ border-radius: 19px;
     height: 0px;
     overflow: hidden;
     visibility: hidden;
-    @apply
-    text-base2-bold
-    /* overflow: hidden;
-    visibility: hidden; */
 }

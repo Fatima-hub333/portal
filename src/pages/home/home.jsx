@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import HomeHeader from "./homeHeader";
 import NavigationMenu from "../../components/navigationMenu";
 import Property from "../../components/property";

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {BiMenu} from 'react-icons/bi';
@@ -13,11 +14,11 @@ import { useState } from 'react';
 import {FiSearch} from 'react-icons/fi'
 const HomeHeader = () => {
     const [activeheader,setheader]=useState(false);
-  return (<section className='flex flex-col h-full relative'>
+  return (<section className='flex flex-col h-full relative text-black'>
           <div className={`flex flex-row justify-between items-center border-b-[1px] p-2 !h-[80px] bg-white z-30 transition-all ${activeheader ? 'bg-opacity-0 hidden' :'bg-opacity-100 visible '}`}>
          
          <div className='!ml-16 p-4 h-[26.22px]'>
-               <img src={require('../../assets/posts/logo.png')} className="logo"/>
+               <img src={require('../../assets/posts/logo.png')} className="logo" alt="logo"/>
          </div>
 
          <div className='flex flex-row items-center space-x-2 mr-10'>

@@ -1,12 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+    
+  /* selection:bg-yellow-400 selection:text-white
+  scrollbar-thin scrollbar-thumb-darkyellow   */
 }
 
+.bodyColor{
+  background-color: 
+  linearGradient(to left top, rgb(255, 228, 230), rgb(204, 251, 241));
+}
+.slick-dots li.slick-active button:before {
+  color:White !important;
+}
+
+.slick-dots li{
+  width: 2px !important;
+
+  top:90%;
+}
+.slick-dots li button:before{
+  color: white !important;
+  opacity: 0.6 !important;
+  font-size: 7px !important;
+  height: 30px ;
+  width: 30px;
+}
+
+.slick-slide>div{
+  padding: 0px !important;
+}
+
+.slick-dots{
+  @apply
+  relative
+  top-56
+}
+
+.slick-dots li.slick-active button:before{
+  font-size: 10px !important;
+  opacity: 100 !important;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-slide>div {
+  padding: 0 10px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

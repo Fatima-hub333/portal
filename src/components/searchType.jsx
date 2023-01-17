@@ -19,3 +19,14 @@ const SearchType = ({propertyType,setpropertyType}) => {
 }
 
 export default SearchType
+
+import React from 'react'
+const SearchType = ({propertyType, setpropertyType}) => {
+  return (
+    <>
+    <div className='mb:hidden inline-block space-x-2'>
+      <button className={`py-[12px] px-[41px] text-subTitle rounded-full ${propertyType==='buy' ? 'border-[1px] border-[#717171] bg-[#222222] text-white':'bg-white border-[1px] border-[#717171]'}h-fit`} onClick={()=>setpropertyType('buy')}>Buy </button?
+    </div>
+    </>
+  )
+}

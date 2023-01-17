@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import HomeFilter from '../../components/homeFilter';
 import {BiGlobe} from 'react-icons/bi'
 import {MdKeyboardArrowUp} from 'react-icons/md'
@@ -6,7 +6,7 @@ import SearchType from '../../components/searchType';
 
 const HomeContent = () => {
   const [propertyType,setpropertyType]=useState('buy');
-  const [filterClick,setfilterClick]=useState('');
+  const [filterClick, setfilterClick] = useState('');
 
   return (
     <section className=' lg:bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mb:bg-white mix-blend-multiply    bg-white/30   flex flex-col items-center justify-center w-full   h-fit relative text-black' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}}>

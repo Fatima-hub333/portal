@@ -3,6 +3,7 @@ import HomeFilter from '../../components/homeFilter';
 import {BiGlobe} from 'react-icons/bi'
 import {MdKeyboardArrowUp} from 'react-icons/md'
 import SearchType from '../../components/searchType';
+import { BsPlus } from 'react-icons/bs';
 
 const HomeContent = () => {
   const [propertyType,setpropertyType]=useState('buy');
